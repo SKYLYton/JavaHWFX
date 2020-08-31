@@ -5,5 +5,18 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane prefHeight="350" prefWidth="400" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-
+      <TextArea fx:id="textArea" editable="false" prefHeight="309.0" prefWidth="400.0" wrapText="true" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0" />
+   <HBox layoutY="250.0" prefHeight="30.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+         <TextField fx:id="textField" onKeyPressed="#onKeyPrsd" prefHeight="25.0" prefWidth="295.0" />
+         <Button mnemonicParsing="false" onAction="#onClickBtn" prefHeight="25.0" prefWidth="83.0" text="Отправить">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Button>
+      </children>
+      <padding>
+         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+      </padding>
+   </HBox>
 </AnchorPane>
